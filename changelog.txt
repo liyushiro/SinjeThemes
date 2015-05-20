@@ -1,0 +1,35 @@
+*** Changelog ***
+08 February 2015- Version 1.0
+	INITIAL RELEASE
+28 February 2015 - Version 1.1
+	NEW! Revolution Slider
+	NEW! Layer Slider
+	NEW! Added labels for the events status
+	FIXED! Featured image size not set for home style 2
+	FIXED! Issue with file location when child theme is used
+	FIXED! Post thumbnails support bug
+	FIXED! Post title echo bug on homepage
+	FIXED! CSS transitions for header fixed
+	FIXED! Bug with event time showing wrong on list and grid views
+22 March 2015 - Version 1.2
+	NEW! bbpress compatibility
+	NEW! Podcasting for Sermons
+	NEW! Theme customization options at Theme Options
+	NEW! Search and Cart buttons for header
+	NEW! Google fonts options at Theme Options
+	NEW! All sermons of a speaker template added
+	UPDATED! Added a plugin to add in Facebook/Twitter/Gplus tags in Header
+	FIXED! Recent Sermon layout issue when no video is found
+	FIXED! Event counters on homepage not getting correct event start time
+	FIXED! Pagination hidden on Blog Masonry Template
+	FIXED! Sticky Header height Issue
+	FIXED! Bug in single sermons page not displaying tags and content
+	FIXED! Sermons archive page watch now link not taking users to single sermon page
+	FIXED Styling issues for woo commerce new update
+28 April 2015 - Version 1.2.1
+	UPDATED! Theme framework and included plugins for XSS vulnerability prevention
+	FIXED! Homepage header height issue
+	FIXED! Line height menu bug
+	FIXED! Lead content min height bug
+	FIXED! Error on line 487 of init.js
+	FIXED! Long names and positions of staff posts causing overflow issue
