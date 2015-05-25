@@ -122,7 +122,7 @@ else {
         <div class="container">
             <div class="row">
             	<div class="col-md-5 col-sm-5">
-                	<span class="label label-primary"><?php _e('No Event Found','framework'); ?></span>
+                	<span class="label label-primary"><?php _e('Nenhum evento encontrado','framework'); ?></span>
                	</div>
          	</div>
      	</div>
@@ -224,7 +224,7 @@ else {
                                         	<h4><a href="<?php echo esc_url($custom_event_url); ?>" class="event-title"><?php echo esc_attr(get_the_title($value)); ?></a></h4>
                                         </div>
                                     	<div class="lined-info">
-                                        	<span class="meta-data"><i class="fa fa-clock-o"></i> <?php echo esc_attr(date_i18n('l', $key)); ?>, <span class="event-time"><?php echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } ?></span> <?php if($key<date('U')) { echo '<span class="label label-default">'.__('Passed','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('Going On','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Upcoming','framework').'</span>'; } ?></span>
+                                        	<span class="meta-data"><i class="fa fa-clock-o"></i> <?php echo esc_attr(date_i18n('l', $key)); ?>, <span class="event-time"><?php echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } ?></span> <?php if($key<date('U')) { echo '<span class="label label-default">'.__('Aconteceu','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('A acontecer','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Próximo','framework').'</span>'; } ?></span>
                                         </div>
                                     	<div class="lined-info event-location">
                                         	<span class="meta-data"><i class="fa fa-map-marker"></i> <span class="event-location-address"><?php echo esc_attr($event_address); ?></span></span>
