@@ -78,10 +78,10 @@ foreach($events as $key=>$value) {
                 </div>
                 <div class="col-md-5 col-sm-7">
                     <div id="counters" class="counter clearfix" data-date="<?php echo $counter_time; ?>">
-                        <div class="timer-col"> <span id="days"></span> <span class="timer-type"><?php _e('Days','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="hours"></span> <span class="timer-type"><?php _e('Hours','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="minutes"></span> <span class="timer-type"><?php _e('Minutes','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="seconds"></span> <span class="timer-type"><?php _e('Seconds','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="days"></span> <span class="timer-type"><?php _e('Dias,'framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="hours"></span> <span class="timer-type"><?php _e('Horas','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="minutes"></span> <span class="timer-type"><?php _e('Minutos','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="seconds"></span> <span class="timer-type"><?php _e('Segundos','framework'); ?></span> </div>
                     </div>
                 </div>
                 <div class="col-md-2 text-align-right">
