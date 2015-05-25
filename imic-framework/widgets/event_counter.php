@@ -125,9 +125,9 @@ class event_counter extends WP_Widget {
                             <div class="upcoming-event-footer">'; $event_registration = get_post_meta($value,'imic_event_registration',true); if($event_registration==1) {
                             	echo '<a id="imicregister-'.($value+2648).'|'.$key.'" href="#" class="pull-right btn btn-primary btn-sm event-tickets event-register-button">'.__('Registrar','framework').'</a>'; }
                                 echo '<ul class="action-buttons">'; if ($imic_options['switch_sharing'] == 1 && $imic_options['share_post_types']['3'] == '1') { 
-                                    echo '<li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>'; } $event_map = get_post_meta($value,'imic_event_address2',true); if($event_map!='') { 
-                                    echo '<li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>'; } $event_contact_info = get_post_meta($value,'imic_event_manager',true); if($event_contact_info!='') { 
-                                    echo '<li title="Contact event manager"><a id="imiccontact-'.($value+2648).'|'.$key.'" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li>'; }
+                                    echo '<li title="Compatilhe nas Redes Sociais"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>'; } $event_map = get_post_meta($value,'imic_event_address2',true); if($event_map!='') { 
+                                    echo '<li title="Localização do Acontecimento" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>'; } $event_contact_info = get_post_meta($value,'imic_event_manager',true); if($event_contact_info!='') { 
+                                    echo '<li title="Contato com Responsável pelo Evento"><a id="imiccontact-'.($value+2648).'|'.$key.'" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li>'; }
                                 echo '</ul>
                             </div>
                         </section>';
