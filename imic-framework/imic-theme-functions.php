@@ -555,7 +555,7 @@ function imic_event_grid() {
        	<div class="event-list-item-actions">';
 		if($key>date('U')) {
 		$event_registration = get_post_meta($value,'imic_event_registration',true); if($event_registration==1) {
-      	echo '<a  id="register-'.($value+2648).'|'.$key.'" href="#" class="btn btn-default btn-transparent event-tickets event-register-button">'.__('Register','framework').'</a>'; } }
+      	echo '<a  id="register-'.($value+2648).'|'.$key.'" href="#" class="btn btn-default btn-transparent event-tickets event-register-button">'.__('Registrar','framework').'</a>'; } }
        	echo '<ul class="action-buttons">';
 		if ($imic_options['switch_sharing'] == 1 && $imic_options['share_post_types']['3'] == '1') { 
        	echo '<li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>';
