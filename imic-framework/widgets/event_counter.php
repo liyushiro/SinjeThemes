@@ -25,7 +25,7 @@ class event_counter extends WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Select Category', 'imic-framework-admin'); ?></label>
             <select class="spType_event_cat" id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>">
-            <option value=""><?php _e('All','imic-framework-admin'); ?></option>
+            <option value=""><?php _e('Todos','imic-framework-admin'); ?></option>
                 <?php
                 $post_terms = get_terms('event-category');
                 if(!empty($post_terms)){
@@ -71,7 +71,7 @@ class event_counter extends WP_Widget {
            
 	   // these are the widget options
 	   $post_title = apply_filters('widget_title', $instance['title']);
-	   $post_title = ($post_title=='')?__('Upcoming Events','imic-framework-admin'):$post_title;
+	   $post_title = ($post_title=='')?__('Próximos Eventos','imic-framework-admin'):$post_title;
        $category = apply_filters('widget-category', empty($instance['category']) ?'': $instance['category'], $instance, $this->id_base);
 	   $EventHeading = $post_title;
 	   echo $args['before_widget'];
@@ -110,12 +110,12 @@ class event_counter extends WP_Widget {
                                 get_the_post_thumbnail($value,'600x400').'
                             </a>'; }
                             echo '<div class="upcoming-event-content">
-                                <span class="label label-primary upcoming-event-label">'.__('Next coming event','framework').'</span>
+                                <span class="label label-primary upcoming-event-label">'.__('Próximos Acontecimentos','framework').'</span>
                                 <div id="event-counter-'.$this->id.'" class="counter clearfix" data-date="'.$counter_time.'">
-                                    <div class="timer-col"> <span id="days"></span> <span class="timer-type">'.__('Days','framework').'</span> </div>
-                                    <div class="timer-col"> <span id="hours"></span> <span class="timer-type">'.__('Hours','framework').'</span> </div>
-                                    <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">'.__('Minutes','framework').'</span> </div>
-                                    <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">'.__('Seconds','framework').'</span> </div>
+                                    <div class="timer-col"> <span id="days"></span> <span class="timer-type">'.__('Dias','framework').'</span> </div>
+                                    <div class="timer-col"> <span id="hours"></span> <span class="timer-type">'.__('Horas','framework').'</span> </div>
+                                    <div class="timer-col"> <span id="minutes"></span> <span class="timer-type">'.__('Minutos','framework').'</span> </div>
+                                    <div class="timer-col"> <span id="seconds"></span> <span class="timer-type">'.__('Segundos','framework').'</span> </div>
                                 </div>
                                 <h3><a href="'.esc_url($custom_event_url).'" class="event-title">'.get_the_title($value).'</a></h3>
                                 <span class="meta-data">On <span class="event-date">'.date_i18n(get_option('date_format'), $key).'</span>'.__(' at ','framework').'<span class="event-time">'.date_i18n(get_option('time_format'), $st_time).'</span>'.__(' at','framework').'</span>';
