@@ -123,7 +123,7 @@ class event_counter extends WP_Widget {
                               	echo '<span class="meta-data event-location"> <span class="event-location-address">'.$address.'</span></span>'; }
                             echo '</div>
                             <div class="upcoming-event-footer">'; $event_registration = get_post_meta($value,'imic_event_registration',true); if($event_registration==1) {
-                            	echo '<a id="imicregister-'.($value+2648).'|'.$key.'" href="#" class="pull-right btn btn-primary btn-sm event-tickets event-register-button">'.__('Register','framework').'</a>'; }
+                            	echo '<a id="imicregister-'.($value+2648).'|'.$key.'" href="#" class="pull-right btn btn-primary btn-sm event-tickets event-register-button">'.__('Registrar','framework').'</a>'; }
                                 echo '<ul class="action-buttons">'; if ($imic_options['switch_sharing'] == 1 && $imic_options['share_post_types']['3'] == '1') { 
                                     echo '<li title="Share event"><a href="#" data-trigger="focus" data-placement="top" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>'; } $event_map = get_post_meta($value,'imic_event_address2',true); if($event_map!='') { 
                                     echo '<li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>'; } $event_contact_info = get_post_meta($value,'imic_event_manager',true); if($event_contact_info!='') { 
