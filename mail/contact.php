@@ -14,13 +14,13 @@ $phone     = $_POST['phone'];
 $comments = $_POST['comments'];
 $recipients = $_POST['recipients'];
 if(trim($fname) == '') {
-	echo '<div class="alert alert-error">You must enter your first name.</div>';
+	echo '<div class="alert alert-error">Você precisa entrar com o primeiro nome.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="alert alert-error">You must enter email address.</div>';
+	echo '<div class="alert alert-error">Você precisa entrar com o seu email.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="alert alert-error">You must enter a valid email address.</div>';
+	echo '<div class="alert alert-error">Você precisa entrar e validar o seu endereço.</div>';
 	exit();
 }
 if(get_magic_quotes_gpc()) {

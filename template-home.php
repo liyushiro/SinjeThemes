@@ -97,10 +97,10 @@ foreach($events as $key=>$value) {
                 </div>
                 <div class="col-md-5 col-sm-7">
                     <div id="counters" class="counter clearfix" data-date="<?php echo $counter_time; ?>">
-                        <div class="timer-col"> <span id="days"></span> <span class="timer-type"><?php _e('Days','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="hours"></span> <span class="timer-type"><?php _e('Hours','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="minutes"></span> <span class="timer-type"><?php _e('Minutes','framework'); ?></span> </div>
-                        <div class="timer-col"> <span id="seconds"></span> <span class="timer-type"><?php _e('Seconds','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="days"></span> <span class="timer-type"><?php _e('Dias','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="hours"></span> <span class="timer-type"><?php _e('Horas','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="minutes"></span> <span class="timer-type"><?php _e('Minutos','framework'); ?></span> </div>
+                        <div class="timer-col"> <span id="seconds"></span> <span class="timer-type"><?php _e('Segundos','framework'); ?></span> </div>
                     </div>
                 </div>
                 <div class="col-md-2 text-align-right">
@@ -352,7 +352,7 @@ else {
                                     <?php } } ?>
                                                     <div class="meta-data"><?php if($recent_post_type=='post'||$recent_post_type=='sermon'||$recent_post_type=='gallery') {  _e('por ','framework'); ?><a href="<?php $post_author_id = get_post_field( 'post_author', get_the_ID() ); echo esc_url(get_author_posts_url($post_author_id)); ?>"><?php echo esc_attr(get_the_author_meta( 'display_name', $post_author_id )); ?></a><?php _e(' em ','framework'); echo esc_attr(get_the_date(get_option('date_format')));_e(' dentro ','framework'); the_category(', '); } elseif($recent_post_type=='product') { echo '<span class="price">'.$product->get_price_html().' </span> '; do_action( 'woocommerce_after_shop_loop_item' ); } else { echo '<span class="meta-data">'.get_post_meta(get_the_ID(),'imic_staff_position',true).' '.imic_social_staff_icon().'</span>'; } ?></div>
                                                     <?php if(in_array('text',$post_options)) { if($post_content=='excerpt') { echo imic_excerpt($post_excerpt_length); } else { the_content(); } } if(in_array('more',$post_options)) { ?>
-                                    <p><a href="<?php the_permalink(); ?>" class="basic-link"><?php _e('Continue reading ','framework'); ?><i class="fa fa-angle-right"></i></a></p>
+                                    <p><a href="<?php the_permalink(); ?>" class="basic-link"><?php _e('Continue lendo ','framework'); ?><i class="fa fa-angle-right"></i></a></p>
                                     <?php } ?>
                                                 </div>
                                             </div>

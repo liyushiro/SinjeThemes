@@ -20,7 +20,7 @@ if($blog_masonry==0) {
                                		<?php echo $meta_data; ?>
                                 	<?php echo $title; ?>
                               		<?php echo $content; ?>
-                                    <span class="meta-data post-cats"><?php the_category('| '); if (comments_open()) { echo comments_popup_link('<i class="fa fa-comment"></i>'.__('No comments yet','framework'), '<i class="fa fa-comment"></i>1', '<i class="fa fa-comment"></i>%','pull-right meta-data', 'comments-link',__('Comments are off for this post','framework')); } ?></span>
+                                    <span class="meta-data post-cats"><?php the_category('| '); if (comments_open()) { echo comments_popup_link('<i class="fa fa-comment"></i>'.__('Sem Comentários','framework'), '<i class="fa fa-comment"></i>1', '<i class="fa fa-comment"></i>%','pull-right meta-data', 'comments-link',__('Comments are off for this post','framework')); } ?></span>
                                		<a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="basic-link"><?php _e('Continue reading','framework'); ?></a>
                                 </div>
                             </article>
@@ -58,7 +58,7 @@ $title_single = '<h3 class="post-title">'.get_the_title().'</h3>'; ?>
                                 </div>
                                 <div class="grid-footer clearfix">
                                 	<?php if (comments_open()) { echo comments_popup_link('<i class="fa fa-comment"></i>'.__('No comments yet','framework'), '<i class="fa fa-comment"></i>1', '<i class="fa fa-comment"></i>%','pull-right meta-data', 'comments-link',__('Comments are off for this post','framework')); } ?>
-                            		<a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="basic-link"><?php _e('Read post','framework'); ?></a>
+                            		<a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>" class="basic-link"><?php _e('Leia','framework'); ?></a>
                                 </div>
                             </div>
                         </li>

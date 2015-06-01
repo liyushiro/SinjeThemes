@@ -26,7 +26,7 @@ global $imic_options;
                                                         if(!empty($socialSites)){
                                                         ?>
                         <div class="col-md-3">
-                            <h4><i class="fa fa-clock-o"></i><?php _e(' Socialize with us','framework'); ?></h4>
+                            <h4><i class="fa fa-clock-o"></i><?php _e('Visite-nos','framework'); ?></h4>
                             <ul class="social-icons-colored inversed">
                                 <?php
 								foreach ($socialSites as $key => $value) {
@@ -86,32 +86,32 @@ echo'<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> ';
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel"><?php _e('Contact Event Manager','framework'); ?> <span class="accent-color"></span></h4>
+        <h4 class="modal-title" id="myModalLabel"><?php _e('Contato com o Responsável pelo Evento','framework'); ?> <span class="accent-color"></span></h4>
       </div>
       <div class="modal-body">
         <form id="contact-manager-form" class="paypal-submit-form" method="post">
             <div class="row">
                 <div class="col-md-6">
-                    <input id="username1" type="text" name="username1" class="form-control" placeholder="<?php _e('First name (Required)','framework'); ?>">
+                    <input id="username1" type="text" name="username1" class="form-control" placeholder="<?php _e('Primeiro Nome (Obrigatório)','framework'); ?>">
                 </div>
                 <div class="col-md-6">
-                    <input id="lastname1" type="text" name="lastname1" class="form-control" placeholder="<?php _e('Last name','framework'); ?>">
+                    <input id="lastname1" type="text" name="lastname1" class="form-control" placeholder="<?php _e('Sobrenome','framework'); ?>">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <input id="email1" type="text" name="email1" class="form-control" placeholder="<?php _e('Your email (Required)','framework'); ?>">
+                    <input id="email1" type="text" name="email1" class="form-control" placeholder="<?php _e('Seu Email (Obrigatório)','framework'); ?>">
                 </div>
                 <div class="col-md-6">
-                    <input id="phone1" type="text" name="phone1" class="form-control" placeholder="<?php _e('Your phone','framework'); ?>">
+                    <input id="phone1" type="text" name="phone1" class="form-control" placeholder="<?php _e('Seu Telefone','framework'); ?>">
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <textarea id="notes1" name="notes1" rows="3" cols="5" class="form-control" placeholder="<?php _e('Additional notes','framework'); ?>"></textarea>
+                    <textarea id="notes1" name="notes1" rows="3" cols="5" class="form-control" placeholder="<?php _e('Anotações Adicionais','framework'); ?>"></textarea>
                 </div>
             </div>
-            <input id="contact-manager" type="button" name="donate" class="btn btn-primary btn-lg btn-block" value="<?php _e('Contact Now','framework'); ?>">
+            <input id="contact-manager" type="button" name="donate" class="btn btn-primary btn-lg btn-block" value="<?php _e('Entre em Contato Agora','framework'); ?>">
             <div class="message"></div>
         </form>
       </div>
@@ -128,8 +128,8 @@ echo'<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> ';
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <h3 id="ticket-msg"><strong><?php _e('Book your','framework'); ?></strong> <span><?php _e('tickets','framework'); ?></span></h3>
-                    <div id="multi-info-btn"><a style="display:none;" class="btn btn-sm btn-default" href="javascript:void(0);" id="edit-details"><?php _e('Update Personal Details','framework'); ?></a></div>
+                    <h3 id="ticket-msg"><strong><?php _e('Reserve seu','framework'); ?></strong> <span><?php _e('Lugar','framework'); ?></span></h3>
+                    <div id="multi-info-btn"><a style="display:none;" class="btn btn-sm btn-default" href="javascript:void(0);" id="edit-details"><?php _e('Atualizar Dados Pessoais','framework'); ?></a></div>
                 </div>
                 <div class="col-md-9">
                     <div class="event-ticket ticket-form">
@@ -137,22 +137,22 @@ echo'<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> ';
                 <form id="user-event-info" class="register-info-event" method="post">
             <div class="row">
                 <div class="col-md-6">
-                    <input id="username" type="text" name="fname" class="form-control" placeholder="<?php _e('First name (Required)','framework'); ?>">
+                    <input id="username" type="text" name="fname" class="form-control" placeholder="<?php _e('Primeiro Nome (Obrigatório)','framework'); ?>">
                 </div>
                 <div class="col-md-6">
-                    <input id="lastname" type="text" name="lname" class="form-control" placeholder="<?php _e('Last name','framework'); ?>">
+                    <input id="lastname" type="text" name="lname" class="form-control" placeholder="<?php _e('Sobrenome','framework'); ?>">
                     <span style="display:none;" class="ticket-col" id="form-event-date"></span>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <input id="email" type="text" name="email" class="form-control" placeholder="<?php _e('Your email (Required)','framework'); ?>">
+                    <input id="email" type="text" name="email" class="form-control" placeholder="<?php _e('Seu Email (Obrigatório)','framework'); ?>">
                 </div>
                 <div class="col-md-6">
-                    <input id="phone" type="text" name="phone" class="form-control" placeholder="<?php _e('Your phone','framework'); ?>">
+                    <input id="phone" type="text" name="phone" class="form-control" placeholder="<?php _e('Seu Telefone','framework'); ?>">
                 </div>
             </div>
-            <input id="user-info" type="button" name="donate" class="btn btn-primary btn-lg btn-block" value="<?php _e('Next','framework'); ?>">
+            <input id="user-info" type="button" name="donate" class="btn btn-primary btn-lg btn-block" value="<?php _e('Próximo','framework'); ?>">
             <div class="message"></div>
         </form>
         </div>
@@ -167,11 +167,11 @@ echo'<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> ';
                             <div class="event-ticket-right-inner">
                                 <div class="row">
                                     <div class="col-md-9 col-sm-9">
-                                        <span class="meta-data"><?php _e('Your ticket for','framework'); ?></span>
+                                        <span class="meta-data"><?php _e('Seu Lugar para','framework'); ?></span>
                                         <h4 id="dy-event-title"> </h4>
                                     </div>
                                     <div class="col-md-3 col-sm-3">
-                                        <span class="meta-data"><?php _e('Tickets count','framework'); ?></span>
+                                        <span class="meta-data"><?php _e('Números de Reservas','framework'); ?></span>
                                         <select name="members" class="form-control input-sm">
                                             <option>1</option>
                                             <option>2</option>
@@ -187,7 +187,7 @@ echo'<a id="back-to-top"><i class="fa fa-angle-double-up"></i></a> ';
                                             <p class="ticket-col" id="dy-event-date"></p>
                                         </div>
                                         <div class="col" id="booking-btn">
-                                            <a id="booking-ticket" href="#" class="btn btn-warning btn btn-block ticket-col book-event-reg"><?php _e('Book','framework'); ?></a>
+                                            <a id="booking-ticket" href="#" class="btn btn-warning btn btn-block ticket-col book-event-reg"><?php _e('Reserva-se','framework'); ?></a>
                                         </div>
                                         <div class="col">
                                             <p id="dy-event-time"><?php _e('Starts','framework'); ?> </p>

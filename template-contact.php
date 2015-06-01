@@ -46,12 +46,12 @@ $class = 12;
                         	<div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="fname" name="First Name"  class="form-control input-lg" placeholder="<?php _e('First name','framework'); ?>*">
+                                        <input type="text" id="fname" name="First Name"  class="form-control input-lg" placeholder="<?php _e('Primeiro Nome','framework'); ?>*">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="lname" name="Last Name"  class="form-control input-lg" placeholder="<?php _e('Last name','framework'); ?>">
+                                        <input type="text" id="lname" name="Last Name"  class="form-control input-lg" placeholder="<?php _e('Sobrenome','framework'); ?>">
                                     </div>
                               	</div>
                            	</div>
@@ -63,14 +63,14 @@ $class = 12;
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="<?php _e('Phone','framework'); ?>">
+                                        <input type="text" id="phone" name="phone" class="form-control input-lg" placeholder="<?php _e('Telefone','framework'); ?>">
                                     </div>
                                 </div>
                           	</div>
                         	<div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="<?php _e('Message','framework'); ?>"></textarea>
+                                        <textarea cols="6" rows="7" id="comments" name="comments" class="form-control input-lg" placeholder="<?php _e('Mensagem','framework'); ?>"></textarea>
                                     </div>
                                 </div>
                           	</div>
@@ -78,7 +78,7 @@ $class = 12;
                             <input type ="hidden" name ="recipients" id="recipients" value ="<?php echo get_the_ID()+2648; ?>">
                         	<div class="row">
                                 <div class="col-md-12">
-                                    <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="<?php _e('Submit now!','framework'); ?>">
+                                    <input id="submit" name="submit" type="submit" class="btn btn-primary btn-lg btn-block" value="<?php _e('Enviar Agora!','framework'); ?>">
                                 </div>
                           	</div>
                 		</form>

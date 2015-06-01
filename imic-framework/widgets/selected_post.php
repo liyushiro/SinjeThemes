@@ -4,7 +4,7 @@ class selected_post extends WP_Widget {
 	// constructor
 	function selected_post() {
 		 $widget_ops = array('description' => __( 'Display latest and selected post of different post type.','imic-framework-admin') );
-         parent::WP_Widget(false, $name = __('Selected Post','imic-framework-admin'), $widget_ops);
+         parent::WP_Widget(false, $name = __('Post Selecionado','imic-framework-admin'), $widget_ops);
 	}
 	// widget form creation
 	function form($instance) {
@@ -20,12 +20,12 @@ class selected_post extends WP_Widget {
 		}
 	?>
         <p>
-            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'imic-framework-admin'); ?></label>
+            <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Título', 'imic-framework-admin'); ?></label>
             <input class="spTitle" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
         
         <p>
-            <label for="<?php echo $this->get_field_id('type'); ?>"><?php _e('Select Post Type', 'imic-framework-admin'); ?></label>
+            <label for="<?php echo $this->get_field_id('type'); ?>"><?php _e('Tipo de Post selecionado', 'imic-framework-admin'); ?></label>
             <select class="spType" id="<?php echo $this->get_field_id('type'); ?>" name="<?php echo $this->get_field_name('type'); ?>">
                 <?php
                 $post_types = get_post_types( array('_builtin' => false), 'names' ); 
@@ -45,7 +45,7 @@ class selected_post extends WP_Widget {
             </select> 
         </p>
         <p>
-            <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of posts to show', 'imic-framework-admin'); ?></label>
+            <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Número de Post para ser apresentado', 'imic-framework-admin'); ?></label>
             <input id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo $number; ?>" />
         </p> 
 	<?php
@@ -101,7 +101,7 @@ class selected_post extends WP_Widget {
 					}		
 			echo '</ul>';
 		}else{
-			echo __('No ','imic-framework-admin').$type.__(' Found','imic-framework-admin');		
+			echo __('Não ','imic-framework-admin').$type.__(' Achado','imic-framework-admin');		
 		}
    
 	   echo $args['after_widget'];

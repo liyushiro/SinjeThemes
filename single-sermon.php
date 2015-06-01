@@ -50,7 +50,7 @@ $audio_desc = get_post_meta(get_the_ID(),'imic_audio_desc',true);
                 <div class="row">
                 	<div class="col-md-<?php echo $class; ?>"><?php if($term_url!='') { ?>
                     	
-                    	<a href="<?php echo $term_url; ?> " class="basic-link backward"><?php _e('Back to series','framework'); ?></a><?php } ?>
+                    	<a href="<?php echo $term_url; ?> " class="basic-link backward"><?php _e('Voltar a Series','framework'); ?></a><?php } ?>
                     	<div class="sermon-media clearfix">
                         <?php if(!empty($mp4_video)||!empty($webm_video)||!empty($ogg_video)||$vimeo_video!=''||$youtube_video!=''||$self_audio!=''||$soundcloud_audio!=''||$download_pdf!='') { ?>
                         	<div class="sermon-media-left sermon-links">

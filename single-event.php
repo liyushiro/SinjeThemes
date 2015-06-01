@@ -64,12 +64,12 @@ $date = strtotime($date);
                            	<?php } } ?>
                               	<li class="list-group-item">
                             <ul class="action-buttons"><?php if($event_address!='') { ?>
-                               	<li title="<?php _e('Get directions','framework'); ?>" class="hidden-xs"><a href="#" class="cover-overlay-trigger"><i class="icon-compass"></i></a></li><?php } $event_contact_info = get_post_meta(get_the_id(),'imic_event_manager',true); if($event_contact_info!='') { ?>
-                                <li title="<?php _e('Contact event manager','framework'); ?>"><a id="contact-<?php echo (get_the_ID()+2648).'|'.$date; ?>" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li><?php } ?>
-                                <li title="<?php _e('Print','framework'); ?>"><a href="javascript:window.print()"><i class="icon-printer"></i></a></li>
+                               	<li title="<?php _e('Localização','framework'); ?>" class="hidden-xs"><a href="#" class="cover-overlay-trigger"><i class="icon-compass"></i></a></li><?php } $event_contact_info = get_post_meta(get_the_id(),'imic_event_manager',true); if($event_contact_info!='') { ?>
+                                <li title="<?php _e('Contato do Responsável','framework'); ?>"><a id="contact-<?php echo (get_the_ID()+2648).'|'.$date; ?>" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li><?php } ?>
+                                <li title="<?php _e('Imprimir','framework'); ?>"><a href="javascript:window.print()"><i class="icon-printer"></i></a></li>
                             </ul></li>
                             </ul><?php $event_registration = get_post_meta(get_the_ID(),'imic_event_registration',true); if($event_registration==1) { ?>
-                            <a id="register-<?php echo (get_the_ID()+2648).'|'.$date; ?>" href="#" class="btn btn-primary btn-block btn-lg  event-tickets event-register-button"><?php _e('Book Tickets','framework'); ?></a><?php } ?>
+                            <a id="register-<?php echo (get_the_ID()+2648).'|'.$date; ?>" href="#" class="btn btn-primary btn-block btn-lg  event-tickets event-register-button"><?php _e('Reservar Lugar','framework'); ?></a><?php } ?>
            
                         </div>
                         <div class="col-md-9 col-sm-8">
@@ -86,7 +86,7 @@ $date = strtotime($date);
 								if(!empty($feat_data)) {
 									$total_featured = count($feat_data['sch_title']); ?>
                                 <div class="event-details-right">
-                           			<h3 class="heading-wbg"><?php _e('The Schedule','framework'); ?></h3>
+                           			<h3 class="heading-wbg"><?php _e('Programação','framework'); ?></h3>
                                     <div class="event-schedule">
                                     	<div class="timeline"></div>
                                         <?php $featured_count = 1; while($featured_count<=$total_featured) { ?>

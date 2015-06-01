@@ -5,6 +5,7 @@
   When things go wrong, they tend to go wrong in a big way.
   You have been warned!
   ----------------------------------------------------------------------------------- */
+remove_action('wp_head','wp_generator');
 /*
  * When using a child theme you can override certain functions (those wrapped
  * in a function_exists() call) by defining them first in your child theme's

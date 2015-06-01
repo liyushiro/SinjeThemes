@@ -42,7 +42,7 @@ if($recent_term_id==$cat->term_id) { $series = "<span class=\"label label-primar
 				}
 				if($video!='') {
 				$icon = ($first==1)?'<i class="icon icon-music-play"></i>':''; ?>
-                <a href="<?php echo esc_url($video); ?>" data-rel="prettyPhoto[sermon-video]" data-toggle="tooltip" data-placement="bottom" data-original-title="<?php _e('Watch All Videos','framework'); ?>" class="sermon-series-trailer"><?php echo $icon; ?></a>
+                <a href="<?php echo esc_url($video); ?>" data-rel="prettyPhoto[sermon-video]" data-toggle="tooltip" data-placement="bottom" data-original-title="<?php _e('Veja Todos os Videos','framework'); ?>" class="sermon-series-trailer"><?php echo $icon; ?></a>
                 <?php $first++; } } ?>
                 </h2>
         	</div>
@@ -78,7 +78,7 @@ if($recent_term_id==$cat->term_id) { $series = "<span class=\"label label-primar
                             	<div class="row">
                                 	<div class="col-md-5">
                                     	<?php if(has_post_thumbnail()) { ?><a href="<?php the_permalink(); ?>" class="media-box"><?php the_post_thumbnail('600x400'); ?></a><?php } ?>
-                                        <a href="<?php  echo esc_url(get_permalink(get_the_ID())); ?>" class="basic-link"><?php _e('Watch Sermon','framework'); ?></a>
+                                        <a href="<?php  echo esc_url(get_permalink(get_the_ID())); ?>" class="basic-link"><?php _e('Assista','framework'); ?></a>
                                     </div>
                                     <div class="col-md-7">
                                     	<h3><a href="<?php echo esc_url(get_permalink(get_the_ID())); ?>"><?php the_title(); ?></a></h3>
@@ -99,7 +99,7 @@ if($recent_term_id==$cat->term_id) { $series = "<span class=\"label label-primar
                     <?php } else { if(!empty($speakers[1])) { ?>
                     <div class="col-md-3 col-sm-3">
                     	<div class="sermon-pastors sidebar-widget widget">
-                        	<h3><?php _e('Speakers','framework'); ?></h3>
+                        	<h3><?php _e('Ministrador','framework'); ?></h3>
                             <hr class="sm">
                             <ul class="members-list">
                             <?php $all_speakers = array_unique(call_user_func_array('array_merge',$speakers)); 

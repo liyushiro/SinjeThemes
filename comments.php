@@ -45,9 +45,9 @@ if (comments_open()) :
     <div id="respond-wrap" class="clearfix">
            <section class="post-comment-form">
            <div id="respond" class="clearfix">
-                <h4 class="title"><?php comment_form_title(__('Post a comment', 'framework'), __('Post a comment to %s', 'framework')); ?></h4>
+                <h4 class="title"><?php comment_form_title(__('Comentários', 'framework'), __('Post a comment to %s', 'framework')); ?></h4>
                 <div class="cancel-comment-reply">
-			<?php cancel_comment_reply_link(__('Cancel Reply','framework')); ?>
+			<?php cancel_comment_reply_link(__('Cancelar Resposta','framework')); ?>
 		</div>
                 <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
                     <p><?php printf(__('You must be %1$slogged in%2$s to post a comment.', 'framework'), '<a href="' . get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode(get_permalink()) . '">', '</a>') ?></p>
@@ -71,14 +71,14 @@ if (comments_open()) :
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <textarea name="comment" id="comment-textarea" class="form-control input-lg" cols="8" rows="4"  tabindex="4" placeholder="<?php _e('Your comment','framework'); ?>" ></textarea>
+                                    <textarea name="comment" id="comment-textarea" class="form-control input-lg" cols="8" rows="4"  tabindex="4" placeholder="<?php _e('Deixe seu comentário','framework'); ?>" ></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-md-12">
-                                    <input name="submit" type="submit" class="btn btn-primary btn-lg" id="submit" tabindex="5" value="<?php _e('Submit your comment', 'framework') ?>" />
+                                    <input name="submit" type="submit" class="btn btn-primary btn-lg" id="submit" tabindex="5" value="<?php _e('Envie seu comentário', 'framework') ?>" />
                                     <?php comment_id_fields(); ?>
                                     <?php do_action('comment_form', $post->ID); ?>
                                 </div>

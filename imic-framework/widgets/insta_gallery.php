@@ -22,19 +22,19 @@ class insta_gallery extends WP_Widget {
 		}
 	?>
         <p>
-        	<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'imic-framework-admin'); ?></label>
+        	<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Título', 'imic-framework-admin'); ?></label>
         	<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" />
         </p>
         <p>
-        	<label for="<?php echo $this->get_field_id('username'); ?>"><?php _e('User ID', 'imic-framework-admin'); ?></label>
+        	<label for="<?php echo $this->get_field_id('username'); ?>"><?php _e('ID do Usuário', 'imic-framework-admin'); ?></label>
         	<input class="widefat" id="<?php echo $this->get_field_id('username'); ?>" name="<?php echo $this->get_field_name('username'); ?>" type="text" value="<?php echo $username; ?>" />
         </p>
         <p>
-        	<label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Number of Images', 'imic-framework-admin'); ?></label>
+        	<label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Número de imagem', 'imic-framework-admin'); ?></label>
         	<input class="widefat" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>" type="text" value="<?php echo $count; ?>" />
         </p>
         <p>
-        	<label for="<?php echo $this->get_field_id('accessToken'); ?>"><?php _e('Access Token', 'imic-framework-admin'); ?></label>
+        	<label for="<?php echo $this->get_field_id('accessToken'); ?>"><?php _e('Token de acesso', 'imic-framework-admin'); ?></label>
         	<input class="widefat" id="<?php echo $this->get_field_id('accessToken'); ?>" name="<?php echo $this->get_field_name('accessToken'); ?>" type="text" value="<?php echo $accessToken; ?>" />
         </p>
 	<?php

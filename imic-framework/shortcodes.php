@@ -1009,18 +1009,18 @@ function event_calendar($atts) {
 	$output .= '</div>';
 	$output .= '<div class="grid-footer clearfix">';
 	$event_registration = get_post_meta($value,'imic_event_registration',true); if($event_registration==1) {
-   	$output .= '<a id="register-'.($value+2648).'|'.$key.'" href="#" class="pull-right btn btn-sm btn-primary btn-sm event-tickets event-register-button">'.__('Register','framework').'</a>'; }
+   	$output .= '<a id="register-'.($value+2648).'|'.$key.'" href="#" class="pull-right btn btn-sm btn-primary btn-sm event-tickets event-register-button">'.__('Registrar','framework').'</a>'; }
  	$output .= '<ul class="action-buttons">';
 	if ($imic_options['switch_sharing'] == 1 && $imic_options['share_post_types']['3'] == '1') {
-  	$output .= '<li title="Share event"><a href="#" data-trigger="focus" data-placement="right" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>'; } 
+  	$output .= '<li title="Compatilhe evento"><a href="#" data-trigger="focus" data-placement="right" data-content="" data-toggle="popover" data-original-title="Share Event" class="event-share-link"><i class="icon-share"></i></a></li>'; } 
 	$event_map = get_post_meta($value,'imic_event_address2',true); if($event_map!='') {
- 	$output .= '<li title="Get directions" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>'; } 
+ 	$output .= '<li title="Saiba como chegar" class="hidden-xs"><a href="#" class="cover-overlay-trigger event-direction-link"><i class="icon-compass"></i></a></li>'; } 
 	$event_contact_info = get_post_meta($value,'imic_event_manager',true); if($event_contact_info!='') {
-   	$output .= '<li title="Contact event manager"><a id="contact-'.($value+2648).'|'.$key.'" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li>'; } 
+   	$output .= '<li title="Contato com o Responsável pelo Evento"><a id="contact-'.($value+2648).'|'.$key.'" href="#" data-toggle="modal" data-target="#Econtact" class="event-contact-link"><i class="icon-mail"></i></a></li>'; } 
   	$output .= '</ul></div>';
 	
     $output .= '</div></div></li></ul>';
-			return '<div class="row"><div class="col-md-9">'.$term_output.'<div id="calendar"><div id ="'.$category_id.'" class ="event_calendar calendar"></div></div></div><div class="col-md-3"><h2 class="title ">'.__('Event Preview','framework').'</h2><div id="events-preview-box">'.$output.'</div></div>';
+			return '<div class="row"><div class="col-md-9">'.$term_output.'<div id="calendar"><div id ="'.$category_id.'" class ="event_calendar calendar"></div></div></div><div class="col-md-3"><h2 class="title ">'.__('Pré-visualizar','framework').'</h2><div id="events-preview-box">'.$output.'</div></div>';
 		}else {
 			return $term_output.'<div id="calendar"><div id ="'.$category_id.'" class ="event_calendar calendar"></div></div>'; }
 }

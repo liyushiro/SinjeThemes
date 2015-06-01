@@ -67,7 +67,7 @@ $event_count = ($event_count!='')?$event_count:10; ?>
                             <span class="year"><?php echo esc_attr(date_i18n('Y')); ?></span>
                             <a href="javascript:void(0)" rel="<?php echo $event_category; ?>" class="upcomingEvents actions left" id="<?php echo $prev_month; ?>"><i class="fa fa-angle-left"></i></a>
                             <a href="javascript:void(0)" rel="<?php echo $event_category; ?>" class="upcomingEvents actions right" id="<?php echo $next_months; ?>"><i class="fa fa-angle-right"></i></a>
-                            <?php } else { echo '<span class="month">'.__('Events','framework').'</span><a href="javascript:" rel="'.$event_category.'" class="pastevents" id="past-'.$event_count.'"><span class="year">'.__('Past','framework').'</span></a>'; } ?>
+                            <?php } else { echo '<span class="month">'.__('Eventos','framework').'</span><a href="javascript:" rel="'.$event_category.'" class="pastevents" id="past-'.$event_count.'"><span class="year">'.__('Passado','framework').'</span></a>'; } ?>
                             <div id="load-next-events" class="load-events" style="display:none;"><img src="<?php echo IMIC_THEME_PATH; ?>/images/loader.gif"></div>
                         </div>
                         <?php if(is_active_sidebar($pageSidebar)) { ?>
@@ -80,7 +80,7 @@ $event_count = ($event_count!='')?$event_count:10; ?>
                             <div class="events-listing-header">
                                 <ul class="sort-source" data-sort-id="events" data-option-key="filter">
                                 <?php $event_cats = get_terms("event-category");?>
-                                            <li data-option-value="*" class="active"><a href="#"> <?php _e('Show All','framework'); ?></a></li>
+                                            <li data-option-value="*" class="active"><a href="#"> <?php _e('Mostrar Tudo','framework'); ?></a></li>
                                      	<?php foreach($event_cats as $event_cat) { ?>
                                             <li data-option-value=".<?php echo $event_cat->slug; ?>"><a href="#"><?php echo esc_attr($event_cat->name); ?></a></li>
                                     	<?php } ?>
@@ -122,7 +122,7 @@ $event_count = ($event_count!='')?$event_count:10; ?>
                                         	<h4><a href="<?php echo esc_url($custom_event_url); ?>" class="event-title"><?php echo get_the_title($value); ?></a></h4>
                                         </div>
                                     	<div class="lined-info">
-                                        	<span class="meta-data"><i class="fa fa-clock-o"></i> <?php echo esc_attr(date_i18n('l', $key)); ?>, <span class="event-time"><?php echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } ?></span> <?php if($key<date('U')) { echo '<span class="label label-default">'.__('Passed','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('Going On','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Upcoming','framework').'</span>'; } ?></span>
+                                        	<span class="meta-data"><i class="fa fa-clock-o"></i> <?php echo esc_attr(date_i18n('l', $key)); ?>, <span class="event-time"><?php echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } ?></span> <?php if($key<date('U')) { echo '<span class="label label-default">'.__('Passado','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('Em Andamento','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Próximos','framework').'</span>'; } ?></span>
                                         </div>
                                     	<div class="lined-info event-location">
                                         	<span class="meta-data"><i class="fa fa-map-marker"></i> <span class="event-location-address"><?php echo $event_address; ?></span></span>
@@ -154,7 +154,7 @@ $event_count = ($event_count!='')?$event_count:10; ?>
                 <div class="events-listing-header">
                     <ul class="sort-source" data-sort-id="events" data-option-key="filter">
                         <?php $gallery_cats = get_terms("event-category");?>
-                                            <li data-option-value="*" class="active"><a href="#"> <?php _e('Show All','framework'); ?></a></li>
+                                            <li data-option-value="*" class="active"><a href="#"> <?php _e('Mostrar Tudo','framework'); ?></a></li>
                                      	<?php foreach($gallery_cats as $gallery_cat) { ?>
                                             <li data-option-value=".<?php echo $gallery_cat->slug; ?>"><a href="#"><?php echo esc_attr($gallery_cat->name); ?></a></li>
                                     	<?php } ?>

@@ -31,7 +31,7 @@ class sermon_list extends WP_Widget {
        <p>
             <label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Select Category', 'imic-framework-admin'); ?></label>
             <select class="spType_event_cat" id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>">
-            <option value=""><?php _e('All','imic-framework-admin'); ?></option>
+            <option value=""><?php _e('Todos','imic-framework-admin'); ?></option>
                 <?php
                 $post_terms = get_terms('sermon-category');
                 if(!empty($post_terms)){
@@ -112,7 +112,7 @@ class sermon_list extends WP_Widget {
                                     echo '</div>';
                                     echo '<div class="latest-sermon-content">
                                         <h4><a href="'.get_permalink().'">'.get_the_title().'</a></h4>
-                                        <div class="meta-data">'.__('by ','framework').'<a href="'.esc_url(get_author_posts_url($post_author_id)).'">'.get_the_author_meta( 'display_name', $post_author_id ).'</a></div>
+                                        <div class="meta-data">'.__('por ','framework').'<a href="'.esc_url(get_author_posts_url($post_author_id)).'">'.get_the_author_meta( 'display_name', $post_author_id ).'</a></div>
                                         '.imic_excerpt(8).'
                                     </div>
                                     <div class="sermon-links">
@@ -126,12 +126,12 @@ class sermon_list extends WP_Widget {
                                	</li>'; } else {
                                 echo '<li>
                                  	<a href="'.get_permalink().'"><strong class="post-title">'.get_the_title().'</strong></a>
-                                        <div class="meta-data">'.__('by ','framework').'<a href="'.esc_url(get_author_posts_url($post_author_id)).'">'.get_the_author_meta( 'display_name', $post_author_id ).'</a></div>
+                                        <div class="meta-data">'.__('por ','framework').'<a href="'.esc_url(get_author_posts_url($post_author_id)).'">'.get_the_author_meta( 'display_name', $post_author_id ).'</a></div>
                                 </li>'; }
 								$first++;
 		endwhile; echo '</ul>'; wp_reset_query();
 		else:
-			_e('No Sermons Found','imic-framework-admin');		
+			_e('Sermão não encontrado','imic-framework-admin');		
 		endif;
 	   if ( ! $this->is_preview() ) {
 			$cache[ $args['widget_id'] ] = ob_get_flush();

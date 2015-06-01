@@ -41,7 +41,7 @@ class custom_category extends WP_Widget {
                         echo '<option value="'. $post_type .'" '.$activePost.'>' . $post_type . '</p>';
                     }
                 }else{
-                     echo '<option value="no">'.__( 'No Post Type Found.','imic-framework-admin').'</option>';
+                     echo '<option value="no">'.__( 'Tipo de Post não encontrado.','imic-framework-admin').'</option>';
                 }
                 ?>
             </select> 

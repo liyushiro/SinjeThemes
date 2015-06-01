@@ -137,9 +137,9 @@ jQuery("#booking-ticket").live('click',function(e){
 			},
 			success: function(data) {
 				jQuery(".ticket-id").html(data);
-				jQuery("#booking-btn").html("<span class=\"btn btn-success btn btn-block ticket-col\">Booked</span>");
+				jQuery("#booking-btn").html("<span class=\"btn btn-success btn btn-block ticket-col\">Reservado</span>");
 				jQuery("#multi-info-btn").html("<a class=\"btn btn-sm btn-default\" onClick=\"window.print()\">Print</a>");
-				jQuery("#ticket-msg").html("<strong>Event Details has been sent to your Email</strong>");
+				jQuery("#ticket-msg").html("<strong>Detalhes sobre o evento foi enviado para seu email</strong>");
 				jQuery('head').append('<style type="text/css" media="print">div.body, .ticket-booking-close, #multi-info-btn{display:none;}.ticket-booking h3 strong{letter-spacing:0;}.ticket-booking h3{font-size:18px;}@page{size-auto;margin:5mm 5mm 5mm 5mm}body{margin:0;}.ticket-booking-wrapper{top:0;}</style>');
 			},
 			complete: function() {

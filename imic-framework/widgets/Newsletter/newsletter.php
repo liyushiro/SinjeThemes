@@ -66,8 +66,8 @@ class newsletter extends WP_Widget {
                  echo '<p>'.$description.'</p>';   
                 }
 		echo'<form method ="post" action ="#">
-                    <input type="email" name="newsletter_email" id="email-nl" placeholder="'.__('Enter your email','framework').'" class="form-control">
-                  <input type="submit" name="newsletter_submit" class="btn btn-primary btn-block btn-lg" value="'.__('Subscribe','framework').'">
+                    <input type="email" name="newsletter_email" id="email-nl" placeholder="'.__('Seu Email','framework').'" class="form-control">
+                  <input type="submit" name="newsletter_submit" class="btn btn-primary btn-block btn-lg" value="'.__('Inscreva-se','framework').'">
                </form>';
           echo $args['after_widget'];
 	}

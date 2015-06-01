@@ -21,7 +21,7 @@
         <!--// SITE TITLE //-->
         <title>
             <?php wp_title('|', true, 'right'); ?>
-<?php bloginfo('name'); ?>
+ <?php bloginfo('name'); ?> 
         </title>
         <!--// SITE META //-->
         <meta charset="<?php bloginfo('charset'); ?>" />

@@ -4,7 +4,7 @@ class upcoming_events extends WP_Widget {
 	// constructor
 	function upcoming_events() {
 		 $widget_ops = array('description' => __( "Display Upcoming Events.", 'imic-framework-admin') );
-         parent::WP_Widget(false, $name = __('Upcoming Events','imic-framework-admin'), $widget_ops);
+         parent::WP_Widget(false, $name = __('Próximos Eventos','imic-framework-admin'), $widget_ops);
 	}
 	// widget form creation
 	function form($instance) {
@@ -34,7 +34,7 @@ class upcoming_events extends WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Select Category', 'imic-framework-admin'); ?></label>
             <select class="spType_event_cat" id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>">
-            <option value=""><?php _e('All','imic-framework-admin'); ?></option>
+            <option value=""><?php _e('Todos','imic-framework-admin'); ?></option>
                 <?php
                 $post_terms = get_terms('event-category');
                 if(!empty($post_terms)){
@@ -52,8 +52,8 @@ class upcoming_events extends WP_Widget {
         <p>
             <label for="<?php echo $this->get_field_id('status'); ?>"><?php _e('Select Event Type', 'imic-framework-admin'); ?></label>
             <select class="spType_event_cat" id="<?php echo $this->get_field_id('status'); ?>" name="<?php echo $this->get_field_name('status'); ?>">
-            <option value="future" <?php echo ($status=='future')?'selected':''; ?>><?php _e('Future','imic-framework-admin'); ?></option>
-            <option value="past" <?php echo ($status=='past')?'selected':''; ?>><?php _e('Past','imic-framework-admin'); ?></option>
+            <option value="future" <?php echo ($status=='future')?'selected':''; ?>><?php _e('Futuro','imic-framework-admin'); ?></option>
+            <option value="past" <?php echo ($status=='past')?'selected':''; ?>><?php _e('Passado','imic-framework-admin'); ?></option>
             </select> 
         </p> 
 	<?php
@@ -89,7 +89,7 @@ class upcoming_events extends WP_Widget {
            
 	   // these are the widget options
 	   $post_title = apply_filters('widget_title', $instance['title']);
-	   $post_title = ($post_title=='')?__('Upcoming Events','imic-framework-admin'):$post_title;
+	   $post_title = ($post_title=='')?__('Próximos Eventos','imic-framework-admin'):$post_title;
 	   $number = apply_filters('widget_number', $instance['number']);
        $category = apply_filters('widget-category', empty($instance['category']) ?'': $instance['category'], $instance, $this->id_base);
 	   $numberEvent = (!empty($number))? $number : 4 ;
@@ -129,7 +129,7 @@ class upcoming_events extends WP_Widget {
                                     	<div class="lined-info event-title">
                                         	<h4><a href="'.$custom_event_url.'">'.get_the_title($value).'</a></h4>
                                         </div>
-                                        <span class="meta-data"><i class="fa fa-clock-o"></i> '.date_i18n('l, ', $key); echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } echo '</span> '; if($key<date('U')) { echo '<span class="label label-default">'.__('Passed','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('Going On','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Upcoming','framework').'</span>'; } echo '</span>';
+                                        <span class="meta-data"><i class="fa fa-clock-o"></i> '.date_i18n('l, ', $key); echo date_i18n(get_option('time_format'), $st_time); if($start_time_meta!='') { echo ' - '.date_i18n(get_option('time_format'), $key); } echo '</span> '; if($key<date('U')) { echo '<span class="label label-default">'.__('Passed','framework').'</span>'; } elseif(date('U')>$st_time&&date('U')<$key) { echo '<span class="label label-success">'.__('Going On','framework').'</span>'; } else { echo '<span class="label label-primary">'.__('Próximo','framework').'</span>'; } echo '</span>';
 										$address = get_post_meta($value,'imic_event_address2',true); if($address!='') {
                                         echo '<span class="meta-data"><i class="fa fa-map-marker"></i> '.$address.'</span>'; }
                                     echo '</div>
@@ -140,7 +140,7 @@ class upcoming_events extends WP_Widget {
 			echo '<div class="event-list-item">
 			<div class="event-list-item-info">
 			<div class="lined-info event-title"><h4>'.
-			__('No Upcoming Events Found','imic-framework-admin').
+			__('Evento Não Encontrado','imic-framework-admin').
 			'</div></div></div>';		
 		} echo '</div>';
 	   echo $args['after_widget'];

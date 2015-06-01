@@ -137,7 +137,7 @@ class event_counter extends WP_Widget {
 			echo '<section class="upcoming-event format-standard event-list-item event-dynamic">
 			<div class="upcoming-event-content">
 			<h3>'.
-			__('No Upcoming Events Found','imic-framework-admin').
+			__('Próximos eventos não encontrados','imic-framework-admin').
 			'</h3></div></div>';		
 		}
 	   echo $args['after_widget'];
